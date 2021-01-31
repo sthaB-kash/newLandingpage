@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Gorditas&family=Nosifer&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+nav.navbar {
+    color: #fff!important;
+    background: rgba(67, 109, 207, 0.9);
+    opacity: 0.8;
+    position: relative;
+    animation: mynav 700ms 0s;
+    padding: 20px 50px!important;     
+    animation-timing-function: ease-in-out;
+    /* animation-fill-mode: forwards; */
+    z-index: 2;
+}
+.navbar-brand {
+    color: #fff;
+    font-family: 'Nosifer', cursive;
+    font-size: 2rem;
+}
+.navbar-brand:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a.nav-link {
+    color: #fff!important;
+}
+.nav-item:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+.bi-x-circle-fill {
+    display: none
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://miro.medium.com/max/4000/1*-T8oo_JoKkMxfnPKLt_Ciw.jpeg");
+    background-size: cover;
+    z-index: -1;
+    animation: image 2s 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+    
+}
+
+@keyframes image {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    75% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login-signup {
+    width: 25%;
+    position: absolute!important;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    overflow: hidden;
+    /* padding: 30px 50px; */
+}
+.login-btn, .signup-btn {
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: center;
+    background: rgb(236, 72, 43);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    padding: 20px;
+    clip-path: polygon(100% 0%, 94% 50%, 100% 100%, 10% 100%, 0% 50%, 10% 0%);
+    position: relative;
+    visibility: hidden;
+    
+}
+
+.login-btn {
+    margin-bottom: 20px;
+    animation: login 1.5s 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.signup-btn {
+    border-color:  none;   
+    animation: signup 1.5s 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes login {
+    0%{
+        right: -10px;
+        visibility: visible;
+    }
+    25% {
+        right: -8px;
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+        right: -5px;
+    }
+    75% {
+        right: -2px;
+        visibility: visible;
+    }
+    100% {
+        right: 0px;
+        visibility: visible;
+    }
+}
+
+@keyframes signup {
+    0%{
+        left: -10px;
+        visibility: visible;
+    }
+    25% {
+        left: -8px;
+        visibility: visible;
+    }
+    50% {
+        visibility: visible;
+        left: -5px;
+    }
+    75% {
+        left: -2px;
+        visibility: visible;
+    }
+    100% {
+        left: 0px;
+        visibility: visible;
+    }
+}
+@keyframes mynav {
+    0% {
+        top: -100px;
+    }
+    10% {
+        top: -90px;
+    }
+    20% {
+        top: -80px;
+    }
+    30% {
+        top: -70px;
+    }
+    40% {
+        top: -60px;
+    }
+    50% {
+        top: -50px;
+    }
+    60% {
+        top: -40px;
+    }
+    70% {
+        top: -30px;
+    }
+    80% {
+        top: -20px;
+    }
+    90% {
+        top: -10px;
+    }
+    100% {
+        top:0px;
+    }
+}
